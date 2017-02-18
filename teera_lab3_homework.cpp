@@ -57,7 +57,7 @@ cv::Mat construct_hsv_hist(cv::Mat matImage) {
     calcHist(&hsv_planes[1], 1, 0, cv::Mat(), s_hist, 1, &histSize, &histRange);
     calcHist(&hsv_planes[2], 1, 0, cv::Mat(), v_hist, 1, &histSize, &histRange);
 
-    // Draw the histograms for B, G and R
+    // Draw the histograms for H, S and V
     int hist_w = 512;
     int hist_h = 400;
     int bin_w = cvRound(static_cast<double>(hist_w / histSize));
